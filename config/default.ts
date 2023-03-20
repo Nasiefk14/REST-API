@@ -1,4 +1,8 @@
+require('dotenv').config();
+
+const DbPort = process.env.PORT
+const DbConnection = process.env.CONNECTIONSTRING
 export default {
-    port: 1330,
-    dbUri: "mongodb+srv://nasief_khan:14051998%40NK@recipes.9ztgiqo.mongodb.net/rest-api-tut"
+    port: DbPort,
+    dbUri: DbConnection
 }      
